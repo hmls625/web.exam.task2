@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <heaedr class="shadow-sm d-flex justify-content-between">
+        <div class="my-3 mx-5">Саблин Дмитрий Михайлович</div>
+        <div class="my-3">201-323</div>
+        <div class="my-3 mx-5">25.03.2022</div>
+    </heaedr>
+    <main class="vh-100 d-flex justify-content-center">
+        <form action="https://httpbin.org/post" method="POST" class="shadow-lg h-50 w-50 my-auto d-flex flex-column justify-content-center">
+            <div class="w-75 h-75 mx-auto d-flex flex-column justify-content-between">
+                <label class="w-100" for="name"><input name="name" class="w-100" id="name" class="px-2" placeholder="Имя" type="text" /></label>
+                <label class="w-100" for="email"><input name="email" class="w-100" id="Email" class="px-2" placeholder="Почта/Email" type="email" /></label>
+                <div class="d-flex flex-column">
+                    <div>Рейтинг:</div>
+                    <div>
+                        <label class="d-flex" for="bad">
+                            <input class="my-auto mr-2" type="radio" value="bad" name="rating" id="bad" />
+                            <div>Плохо</div>
+                        </label>
+                        <label class="d-flex" for="normal">
+                            <input class="my-auto mr-2" type="radio" value="normal" name="rating" id="normal" />
+                            <div>Нормально</div>
+                        </label>
+                        <label class="d-flex" for="good">
+                            <input class="my-auto mr-2" type="radio" value="good" name="rating" id="good" />
+                            <div>Хорошо</div>
+                        </label>
+                        <label class="d-flex" for="great">
+                            <input class="my-auto mr-2" type="radio" value="great" name="rating" id="great" />
+                            <div>Отлично</div>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
